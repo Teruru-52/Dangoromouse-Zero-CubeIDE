@@ -1,0 +1,20 @@
+02:00:58 **** Incremental Build of configuration Debug for project dangoromouse ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "dangoromouse.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\reiji\Documents\Research\ClassicMouse\STBee_F4mini_Mouse\dangoromouse\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="dangoromouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: dangoromouse.elf
+ 
+arm-none-eabi-objdump -h -S  dangoromouse.elf  > "dangoromouse.list"
+arm-none-eabi-objcopy  -O binary  dangoromouse.elf  "dangoromouse.bin"
+arm-none-eabi-size   dangoromouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30368	    484	   2260	  33112	   8158	dangoromouse.elf
+Finished building: default.size.stdout
+ 
+Finished building: dangoromouse.bin
+ 
+Finished building: dangoromouse.list
+ 
+
+02:00:59 Build Finished. 0 errors, 0 warnings. (took 1s.316ms)
+

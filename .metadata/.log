@@ -94,3 +94,27 @@ org.eclipse.core.runtime.CoreException: ST-Linkデバイスの初期化エラー
 !MESSAGE ST-Linkデバイスの初期化エラー。
 理由: (6) ST-Linkファームウェアの更新が必要です。
 更新ツールを使用してST-Linkファームウェアを更新して下さい。ST-Linkケーブルを取り外した後、再装着してOKをクリックして下さい。
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-04-13 00:57:08.385
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.core.DebugPlugin$EventDispatchJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-04-13 00:57:08.388
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2022-04-17 07:13:40.498 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-04-17 07:14:14.726
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-04-17 07:14:14.847
+!MESSAGE Log4j initialized with config file C:\Users\reiji\Documents\Research\ClassicMouse\STBee_F4mini_Mouse\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-04-17 07:14:31.349
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2022-04-17 07:14:32.753
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties

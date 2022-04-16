@@ -1,0 +1,12 @@
+#ifndef _BMX055_H_
+#define _BMX055_H_
+#include "main.h"
+
+uint8_t read_byte(uint8_t reg);
+void write_byte(uint8_t reg, uint8_t data);
+
+void GyroInit();
+void GyroOffsetCalc();
+void UpdateGyroData();
+
+#endif // _BMX055_H_

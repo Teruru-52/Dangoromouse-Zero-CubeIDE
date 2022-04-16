@@ -1,0 +1,5 @@
+bmx055.c:9:9:read_byte	32	static
+bmx055.c:24:6:write_byte	32	static
+bmx055.c:38:6:GyroInit	16	static
+bmx055.c:72:6:GyroOffsetCalc	24	static
+bmx055.c:90:6:UpdateGyroData	16	static
